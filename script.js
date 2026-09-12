@@ -9,6 +9,8 @@ const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
 
+const audio = new Audio("meow.mp3");
+
 // click envelope
 
 envelope.addEventListener("click", () => {
@@ -48,4 +50,7 @@ yesBtn.addEventListener("click", () => {
     buttons.style.display = "none";
 
     finalText.style.display = "block";
+
+    audio.src = "yay.mp3";
+    audio.play();
 });    
